@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="css/vendor/owl.carousel.css">
     <link rel="stylesheet" href="css/vendor/owl.transitions.css">
     <link rel="stylesheet" href="css/style.css">
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+	<script src="js/vendor/contact.js"></script>
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body class="single">
@@ -23,7 +25,7 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <!-- Loader to display before content Load-->
+    <!-- Loader to display before content Load-->	
     <div class="loading"><img src="img/puff.gif" alt=""></div>
 
 
@@ -56,14 +58,15 @@
   <div class="menu-button one-page">Menu</div>
   <nav>
     <ul  id="navigation-menu" data-breakpoint="992" class="flexnav one-page">
-      <li><a href="index.html">Home</a></li>
+	  <li><a href="index.html">Home</a></li>
 	  <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Accomp</a></li>
+      <li><a href="#experience">Efforts</a></li>
       <li><a href="#education">Education</a></li>
 		<li><a href="#work">Portfolio</a></li>
 	  <li><a href="#reference-link">Certifications</a></li>
       <li><a href="#contact">Contact</a></li>
+	  <li><div id="MyClockDisplay" class="clock" onload="showTime()"></div> </li>
     </ul>
   </nav>			
 				</div>
@@ -83,7 +86,7 @@
 
 	<div class="hero">
 		<div class="hero-inner">
-	    <a href="" class="hero-logo"><img src="https://i.imgur.com/cRbcgeI.jpg" alt="Logo Image"></a>
+	    <a href="" class="hero-logo"><img src="slikaCV.jpg" alt="Logo Image"></a>
 			<div class="hero-copy">
 				<h1><span>I'm'</span> Pavle Marinković</h1>
 				<h6>Android Certified Application Developer, Student</h6>
@@ -106,9 +109,9 @@
 				<div class="col-md-6">
 					<h4>About</h4>
 					<div class="about-content">
-						<span class="active-color">Hello, I am Pavle Marinković, student of Faculty of Technical Sciences Novi Sad.</span>
+						<span class="active-color">Hello, I am Pavle Marinković, student of Faculty of Technical Sciences in Novi Sad.</span>
 						<p>Right now im on third year on study program called Information Systems Engineering.
-							 I am coming from Zaječar a small city in east Serbia. As a little I had interests in computers, at one time I made money by selling money in games on a facebook. At the moment, I am most interested in android programming, but in addition I started learning PHP and Python.</p>
+							 I am coming from Zaječar a small city in east Serbia. As a little I had interests in computers, at one time I made money by selling money in games on a facebook. At the moment, I am most interested in android programming and angular, but I'm also interested in arduino programming.</p>
 						<span class="border-dashed"></span>
 						<img src="https://i.imgur.com/tClU8Dc.png" alt="">
 					</div>
@@ -182,30 +185,18 @@
 		<div class="row">
 			<div class="col-md-6">
 				<div class="skill-content">
-					<h4 class="title">Skills</h4>
+					<h4 class="title">Programming skills</h4>
 
-					<h6>Java</h6>
-					<div class="skillbar clearfix " data-percent="40%">
-						<div class="skillbar-bar"></div>
-						<div class="skill-bar-percent">40%</div>
-					</div> <!-- End Skill Bar -->
-
-					<h6>WordPress</h6>
-					<div class="skillbar clearfix " data-percent="70%">
-						<div class="skillbar-bar"></div>
-						<div class="skill-bar-percent">80%</div>
-					</div> <!-- End Skill Bar -->
-
-					<h6>C#</h6>
-					<div class="skillbar clearfix " data-percent="80%">
+					<h6>HTML & CSS</h6>
+					<div class="skillbar clearfix " data-percent="90%">
 						<div class="skillbar-bar"></div>
 						<div class="skill-bar-percent">90%</div>
 					</div> <!-- End Skill Bar -->
 
-					<h6>C</h6>
-					<div class="skillbar clearfix " data-percent="50%">
+					<h6>WordPress</h6>
+					<div class="skillbar clearfix " data-percent="80%">
 						<div class="skillbar-bar"></div>
-						<div class="skill-bar-percent">50%</div>
+						<div class="skill-bar-percent">80%</div>
 					</div> <!-- End Skill Bar -->
 
 					<h6>Android</h6>
@@ -213,15 +204,35 @@
 						<div class="skillbar-bar"></div>
 						<div class="skill-bar-percent">70%</div>
 					</div> <!-- End Skill Bar -->
-					<h6>HTML</h6>
+
+					<h6>C#</h6>
 					<div class="skillbar clearfix " data-percent="70%">
 						<div class="skillbar-bar"></div>
 						<div class="skill-bar-percent">70%</div>
 					</div> <!-- End Skill Bar -->
+
+					<h6>Angular</h6>
+					<div class="skillbar clearfix " data-percent="60%">
+						<div class="skillbar-bar"></div>
+						<div class="skill-bar-percent">60%</div>
+					</div> <!-- End Skill Bar -->
+
+					<h6>Java</h6>
+					<div class="skillbar clearfix " data-percent="40%">
+						<div class="skillbar-bar"></div>
+						<div class="skill-bar-percent">40%</div>
+					</div> <!-- End Skill Bar -->
+
+					<h6>C</h6>
+					<div class="skillbar clearfix " data-percent="40%">
+						<div class="skillbar-bar"></div>
+						<div class="skill-bar-percent">40%</div>
+					</div> <!-- End Skill Bar -->
+					
 				</div>
 			</div>
 			<div class="col-md-6">
-				<img class="img-responsive" src="https://i.shgcdn.com/59103b21-55c6-4619-b04f-f3533da09219/-/format/auto/-/preview/3000x3000/-/quality/lighter/" alt="">
+				<img class="img-responsive" src="https://i.imgur.com/7R5USYC.png" alt="">
 			</div>
 		</div>
 	</div>
@@ -285,7 +296,7 @@
 					<!-- education-section -->
 						<div id="education" class="active-section">
 <div class="section-block education">
-	<h4 class="title">Education</h4>
+	<h4 class="title">Formal education</h4>
 	<div class="row">
 		<div id="rex-education-slider">
 		<div class="listing-content">
